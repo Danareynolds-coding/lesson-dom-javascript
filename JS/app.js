@@ -42,3 +42,25 @@ function colorList(){
         liList[i].style.color = "purple"
     }
 }
+// className (Bootstrap)
+let leftSide = document.querySelector(".leftBox")
+console.log(leftSide);
+leftSide.classList.remove("col-6");
+leftSide.classList.add("col-3");
+// Text from an input box
+let textBox=document.getElementsByName("num");
+// how to get element form attribute
+console.log(textBox.getAttribute("name"));
+// grabs the value of a textbox
+
+    console.log(textBox.value);
+leftSide.addEventListener("click",()=>{
+    textBox = document.getElementById("num")
+    leftSide.innerText =textBox.value;
+})
+// Removing Elements
+let rightSide = document.querySelector("rightBox")
+console.log(rightSide);
+rightSide.remove();
+
+
